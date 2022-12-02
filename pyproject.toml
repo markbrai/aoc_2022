@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "aoc2022"
+version = "0.1.0"
+description = "Advent of Code 2022"
+authors = ["Mark Braithwaite <mark.braithwaite@ricardo.com>"]
+license = "Ricardo"
+# packages = [
+#     { include = "src/aoc2022"}
+# ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.5"
+pandas = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+flake8-type-checking = "*"
+ipykernel = "*"
+black = "*"
+pytest = "*"
+mkdocs = "*"
+mkdocstrings = {extras = ["python"], version = "*"}
+mkdocs-material = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "ricardo"
+url = 'https://pypi.kube-emea.stc.ricplc.com/'
+
+# [tool.poetry.scripts]
+# aoc2022 = "aoc2022.aoc2022:main"
